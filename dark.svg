@@ -79,7 +79,7 @@
 
   <rect x="2" y="2" width="1176" height="606" rx="18" fill="none" class="border-shimmer" stroke-width="1.5" />
 
-  <!-- LEFT SIDE: ASCII TERMINAL -->
+  <!-- LEFT SIDE: ASCII TERMINAL CARD -->
   <g transform="translate(32, 32)" filter="url(#cardShadow)">
     <rect width="420" height="546" rx="16" fill="#0F172A" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1" />
     
@@ -91,42 +91,41 @@
     
     <line x1="0" y1="40" x2="420" y2="40" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1" />
 
-    <g transform="translate(10, 0)">
-      <animateTransform attributeName="transform" type="translate" values="10,0; 10,-5; 10,0" dur="6s" repeatCount="indefinite" />
-      <text class="font-mono ascii-gradient" font-size="10.5" font-weight="600" letter-spacing="1">
-      <tspan x="24" y="72" opacity="0">+++++++++++++++++++++++++++++==============+<animate attributeName="opacity" to="1" begin="0.00s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="86" opacity="0">=+++++++++++++++++++++++++++++++++++++++++=+<animate attributeName="opacity" to="1" begin="0.04s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="100" opacity="0">=================++=========================<animate attributeName="opacity" to="1" begin="0.08s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="114" opacity="0">-==========++++++++++++++++++===============<animate attributeName="opacity" to="1" begin="0.12s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="128" opacity="0">========++++++++++++++++++++++++++++++=====+<animate attributeName="opacity" to="1" begin="0.16s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="142" opacity="0">=======+++++++++++*++++++++=++++++++++=====+<animate attributeName="opacity" to="1" begin="0.20s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="156" opacity="0">=======++++++++***********++++++++++++++===+<animate attributeName="opacity" to="1" begin="0.24s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="170" opacity="0">======++++++***************+**++++++++++++=+<animate attributeName="opacity" to="1" begin="0.28s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="184" opacity="0">====++========---::-=:-+***+*****+++++++++++<animate attributeName="opacity" to="1" begin="0.32s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="198" opacity="0">=+==-::.......    ...  .::=*********++++++++<animate attributeName="opacity" to="1" begin="0.36s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="212" opacity="0">::-:....    .      .      .:-:-+*****+++++++<animate attributeName="opacity" to="1" begin="0.40s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="226" opacity="0">=+-:.   .:::::.....           .=****++++++++<animate attributeName="opacity" to="1" begin="0.44s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="240" opacity="0">%@+:..:=====-----::::....     :+****++++++++<animate attributeName="opacity" to="1" begin="0.48s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="254" opacity="0">#%#+::#*+=--------:::....:.   -****+++++++++<animate attributeName="opacity" to="1" begin="0.52s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="268" opacity="0">#%##-=#*+=:..:=*=:....::::.  :+***++++++++++<animate attributeName="opacity" to="1" begin="0.56s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="282" opacity="0">#%##=**+=--::=+*=:......:-: :++++++++++++==+<animate attributeName="opacity" to="1" begin="0.60s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="296" opacity="0">#%##*#*+====+*++=-:::::::-:.+++++++++++====+<animate attributeName="opacity" to="1" begin="0.64s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="310" opacity="0">#%###**++=====-=-:.::::::::=++++++++========<animate attributeName="opacity" to="1" begin="0.68s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="324" opacity="0">#%###**+++===--::...::::::-=================<animate attributeName="opacity" to="1" begin="0.72s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="338" opacity="0">#%####**++=---:::...:::::-==================<animate attributeName="opacity" to="1" begin="0.76s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="352" opacity="0">#####***+====-:::::::::::-===============--=<animate attributeName="opacity" to="1" begin="0.80s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="366" opacity="0">##**#*++*+==--:::.....:::-========---------=<animate attributeName="opacity" to="1" begin="0.84s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="380" opacity="0">*#*###*+**+=--:--::...:..========+=====-----<animate attributeName="opacity" to="1" begin="0.88s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="394" opacity="0">#%####=:=*+++=--:::::::.=+==--=-=+++++++====<animate attributeName="opacity" to="1" begin="0.92s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="408" opacity="0">#%#+*+-.:+++++=-::::::.=*===---=++*++*+=+++=<animate attributeName="opacity" to="1" begin="0.96s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="422" opacity="0">*##%*=-..:======----::+%+===---+++***#==++==<animate attributeName="opacity" to="1" begin="1.00s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="436" opacity="0">**#%===:..:--------:-#%#+++=--++=+**##++++++<animate attributeName="opacity" to="1" begin="1.04s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="450" opacity="0">#%%*====-::::-::---+%%+=====-++=++**##****+#<animate attributeName="opacity" to="1" begin="1.08s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="464" opacity="0">*%#*++==++=-::::-+*#*+=====++*==****#%*+####<animate attributeName="opacity" to="1" begin="1.12s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="478" opacity="0">****++==+**+=-:+*====+++==+*#+==***##%#+*%##<animate attributeName="opacity" to="1" begin="1.16s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="492" opacity="0">*#**#*********++==++++++++##*+==+*####*+#%#%<animate attributeName="opacity" to="1" begin="1.20s" dur="0.15s" fill="freeze"/></tspan>
-      <tspan x="24" y="506" opacity="0">*%##############+=++++**##%#+++++##%%%#*@@%@<animate attributeName="opacity" to="1" begin="1.24s" dur="0.15s" fill="freeze"/></tspan>
-
+    <g transform="translate(0, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="6s" repeatCount="indefinite" />
+      <text class="font-mono ascii-gradient" font-size="11" font-weight="600" letter-spacing="1">
+      <tspan x="50" y="72" opacity="0">@@@@@@@@@@@@@<animate attributeName="opacity" to="1" begin="0.00s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="86" opacity="0">%%%%@@@@@@@@@<animate attributeName="opacity" to="1" begin="0.04s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="100" opacity="0">@@@@@@@@@@@@@<animate attributeName="opacity" to="1" begin="0.08s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="114" opacity="0">%%%%%%%%%@@@@<animate attributeName="opacity" to="1" begin="0.12s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="128" opacity="0">%%%%%%%%%%@@@<animate attributeName="opacity" to="1" begin="0.16s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="142" opacity="0">%%%%%%%%%%@%%<animate attributeName="opacity" to="1" begin="0.20s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="156" opacity="0">@@@@@@%%%%%%%%%%%%%%%@%%%%%%@@@@@@<animate attributeName="opacity" to="1" begin="0.24s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="170" opacity="0">@@@@@%%%%%%%%%%%%%%%%%%%%%%%%%@@@%<animate attributeName="opacity" to="1" begin="0.28s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="184" opacity="0">@@@@@@@@@@@@@@@@@@%%%%%%%%%%%%%%@%<animate attributeName="opacity" to="1" begin="0.32s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="198" opacity="0">%%@@@@@@@@@@@@@@@@@@%######%%%%%%%<animate attributeName="opacity" to="1" begin="0.36s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="212" opacity="0">@@@@@@@@@@@@@@@@@@@@@@%%%####%%%%%<animate attributeName="opacity" to="1" begin="0.40s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="226" opacity="0">@@@@@@@@@@@@@@@@@@@@@@@@@%###%%%%%<animate attributeName="opacity" to="1" begin="0.44s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="240" opacity="0">%@@@@@@@@@@@@@@@@@%##<animate attributeName="opacity" to="1" begin="0.48s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="254" opacity="0">@@@@@@@@@@@@@@@@@@###<animate attributeName="opacity" to="1" begin="0.52s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="268" opacity="0">@@@%%@@@@@@@@@@@@%###<animate attributeName="opacity" to="1" begin="0.56s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="282" opacity="0">@@@%#%@@@@@@@@@@@#%%%<animate attributeName="opacity" to="1" begin="0.60s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="296" opacity="0">@@@%%@@@@@@@@@@@%%%%%<animate attributeName="opacity" to="1" begin="0.64s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="310" opacity="0">@%%%%@@@@@@@@@@%%%%%%<animate attributeName="opacity" to="1" begin="0.68s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="324" opacity="0">@%%@%@@@@@@@@@@%%%%%%<animate attributeName="opacity" to="1" begin="0.72s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="338" opacity="0">%%%@@@@@@@@@@@%%%%%%%<animate attributeName="opacity" to="1" begin="0.76s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="352" opacity="0">%@@@@@@@@@@@@@%%%%%%%<animate attributeName="opacity" to="1" begin="0.80s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="366" opacity="0">%%@@@@@@@@@@@@%%%%%%%<animate attributeName="opacity" to="1" begin="0.84s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="380" opacity="0">@@@@@@@@@@%%%@%<animate attributeName="opacity" to="1" begin="0.88s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="394" opacity="0">@@@@@@@@@@%%%%%<animate attributeName="opacity" to="1" begin="0.92s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="408" opacity="0">@@@@@@@@@@%%%%%<animate attributeName="opacity" to="1" begin="0.96s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="422" opacity="0">@@@@@@@@@%%%@@@<animate attributeName="opacity" to="1" begin="1.00s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="436" opacity="0">###############<animate attributeName="opacity" to="1" begin="1.04s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="450" opacity="0">###################<animate attributeName="opacity" to="1" begin="1.08s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="464" opacity="0">#####################<animate attributeName="opacity" to="1" begin="1.12s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="478" opacity="0">#######################<animate attributeName="opacity" to="1" begin="1.16s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="492" opacity="0">###########################<animate attributeName="opacity" to="1" begin="1.20s" dur="0.15s" fill="freeze"/></tspan>
+      <tspan x="50" y="506" opacity="0">#############################<animate attributeName="opacity" to="1" begin="1.24s" dur="0.15s" fill="freeze"/></tspan>
       </text>
     </g>
 
@@ -136,14 +135,14 @@
 
     <g transform="translate(20, 520)">
       <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="11" font-weight="600">STATUS: ACTIVE</text>
-      <text x="110" y="0" fill="#94A3B8" class="font-mono" font-size="11">[HOLO-PORTRAIT V2.4]</text>
+      <text x="110" y="0" fill="#94A3B8" class="font-mono" font-size="11">[HOLO-PORTRAIT V2.5]</text>
       <rect x="270" y="-10" width="8" height="12" fill="#38BDF8">
         <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
       </rect>
     </g>
   </g>
 
-  <!-- RIGHT SIDE: MAIN PROFILE TERMINAL -->
+  <!-- RIGHT SIDE: MAIN PROFILE TERMINAL CARD -->
   <g transform="translate(476, 32)" filter="url(#cardShadow)">
     <rect width="672" height="546" rx="16" fill="#0F172A" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1" />
     
@@ -183,7 +182,7 @@
         <animate attributeName="opacity" to="1" begin="0.3s" dur="0.4s" fill="freeze"/>
         <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="600">~/location</text>
         <text x="110" y="0" fill="#94A3B8" class="font-mono" font-size="13">&#x2192;</text>
-        <text x="135" y="0" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Ankara, Turkey &#x1F1F9;&#x1F1F7;</text>
+        <text x="135" y="0" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Istanbul, Turkey &#x1F1F9;&#x1F1F7;</text>
       </g>
 
       <g transform="translate(0, 28)" opacity="0">
@@ -197,7 +196,7 @@
         <animate attributeName="opacity" to="1" begin="0.7s" dur="0.4s" fill="freeze"/>
         <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="600">~/focus</text>
         <text x="110" y="0" fill="#94A3B8" class="font-mono" font-size="13">&#x2192;</text>
-        <text x="135" y="0" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">C++ &#xB7; Algorithms &#xB7; System Programming &#xB7; AI &#x26A1;</text>
+        <text x="135" y="0" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">C++ &#xB7; C# &#xB7; Algorithms &#xB7; System Dev &#x26A1;</text>
       </g>
 
       <g transform="translate(0, 84)" opacity="0">
@@ -217,6 +216,7 @@
 
     <line x1="32" y1="360" x2="640" y2="360" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1" stroke-dasharray="4,4" />
 
+    <!-- SKILLS SECTION -->
     <g transform="translate(32, 386)">
       <text x="0" y="0" fill="#94A3B8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">SKILLS &amp; TECHNOLOGIES</text>
 
@@ -226,18 +226,18 @@
           <text x="34" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">C++</text>
         </g>
         <g transform="translate(76, 0)">
-          <rect width="78" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
-          <text x="39" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">Python</text>
+          <rect width="60" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
+          <text x="30" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">C#</text>
         </g>
-        <g transform="translate(162, 0)">
+        <g transform="translate(144, 0)">
           <rect width="94" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
           <text x="47" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">Algorithms</text>
         </g>
-        <g transform="translate(264, 0)">
+        <g transform="translate(246, 0)">
           <rect width="90" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
           <text x="45" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">Git / GitHub</text>
         </g>
-        <g transform="translate(362, 0)">
+        <g transform="translate(344, 0)">
           <rect width="66" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
           <text x="33" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">Linux</text>
         </g>
@@ -257,12 +257,13 @@
           <text x="60" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">Problem Solving</text>
         </g>
         <g transform="translate(332, 0)">
-          <rect width="80" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
-          <text x="40" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">AI Workflows</text>
+          <rect width="88" height="26" rx="13" fill="#1E293B" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
+          <text x="44" y="17" text-anchor="middle" fill="#E2E8F0" class="font-sans" font-size="11" font-weight="600">AI Workflows</text>
         </g>
       </g>
     </g>
 
+    <!-- BOTTOM CONNECT LINKS -->
     <g transform="translate(32, 502)">
       <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="700">$</text>
       <text x="16" y="0" fill="#94A3B8" class="font-mono" font-size="13" font-weight="500">connect --with</text>
@@ -273,20 +274,15 @@
       <circle cx="202" cy="-4" r="2" fill="#94A3B8" />
 
       <g transform="translate(216, 0)">
-        <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="700">LinkedIn</text>
-      </g>
-      <circle cx="286" cy="-4" r="2" fill="#94A3B8" />
-
-      <g transform="translate(300, 0)">
         <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="700">Email</text>
       </g>
-      <circle cx="350" cy="-4" r="2" fill="#94A3B8" />
+      <circle cx="266" cy="-4" r="2" fill="#94A3B8" />
 
-      <g transform="translate(364, 0)">
+      <g transform="translate(280, 0)">
         <text x="0" y="0" fill="#38BDF8" class="font-mono" font-size="13" font-weight="700">YouTube</text>
       </g>
 
-      <rect x="440" y="-11" width="7" height="14" fill="#38BDF8">
+      <rect x="356" y="-11" width="7" height="14" fill="#38BDF8">
         <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
       </rect>
     </g>
