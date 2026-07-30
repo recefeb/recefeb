@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%">
   <defs>
-    <!-- Background Dark Radial Glows -->
     <radialGradient id="bgGlow1" cx="20%" cy="20%" r="60%">
       <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
@@ -14,7 +13,6 @@
       <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Animated Border Gradient -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7">
         <animate attributeName="stop-color" values="#38bdf8; #818cf8; #34d399; #38bdf8" dur="8s" repeatCount="indefinite"/>
@@ -25,7 +23,6 @@
       </stop>
     </linearGradient>
 
-    <!-- ASCII Animated Color Gradient -->
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#22d3ee">
         <animate attributeName="stop-color" values="#22d3ee; #818cf8; #a855f7; #34d399; #22d3ee" dur="6s" repeatCount="indefinite"/>
@@ -38,7 +35,6 @@
       </stop>
     </linearGradient>
 
-    <!-- Laser Scanline Beam Gradient -->
     <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
       <stop offset="20%" stop-color="#38bdf8" stop-opacity="0.4"/>
@@ -47,20 +43,17 @@
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Name Cyan/Purple Gradient -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="50%" stop-color="#22d3ee"/>
       <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
 
-    <!-- Highlighted Skill Pill Gradient -->
     <linearGradient id="activePillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/>
     </linearGradient>
 
-    <!-- Glassmorphism Drop Shadow -->
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
@@ -73,18 +66,14 @@
       </feMerge>
     </filter>
 
-    <!-- Scanline Pattern for Left Terminal -->
     <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="100" y2="0" stroke="#38bdf8" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
 
-    <!-- Styles for CSS Animations -->
-    <style>
+    <style><![CDATA[
       .font-mono {
         font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Monaco, Consolas, monospace;
       }
-
-      /* Cursor Blinking (Inside Text Tip) */
       @keyframes cursorBlink {
         0%, 100% { opacity: 1; }
         50% { opacity: 0; }
@@ -92,8 +81,6 @@
       .blinking-cursor {
         animation: cursorBlink 0.8s infinite;
       }
-
-      /* Fixed Status Dot Pulsing (Opacity only, no vertical movement) */
       @keyframes statusGlow {
         0%, 100% { opacity: 1; }
         50% { opacity: 0.25; }
@@ -101,8 +88,6 @@
       .status-dot-fixed {
         animation: statusGlow 1.8s infinite ease-in-out;
       }
-
-      /* Non-Overlapping Discrete Typing & Erasing Keyframe Cycles */
       @keyframes type1 {
         0% { opacity: 0; clip-path: inset(0 100% 0 0); }
         2% { opacity: 1; clip-path: inset(0 100% 0 0); }
@@ -135,13 +120,10 @@
         97% { opacity: 1; clip-path: inset(0 100% 0 0); }
         98%, 100% { opacity: 0; clip-path: inset(0 100% 0 0); }
       }
-
       .typed-1 { animation: type1 16s infinite steps(32, end); }
       .typed-2 { animation: type2 16s infinite steps(28, end); }
       .typed-3 { animation: type3 16s infinite steps(34, end); }
       .typed-4 { animation: type4 16s infinite steps(30, end); }
-
-      /* Floating particles */
       @keyframes particleFloat {
         0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
         50% { transform: translateY(-20px) translateX(10px); opacity: 0.8; }
@@ -150,54 +132,42 @@
       .particle-1 { animation: particleFloat 6s infinite ease-in-out; }
       .particle-2 { animation: particleFloat 9s infinite ease-in-out 2s; }
       .particle-3 { animation: particleFloat 7s infinite ease-in-out 4s; }
-
-      /* Skill Pill Hover Style */
       .pill { transition: all 0.3s ease; }
       .pill:hover { fill: #1e293b; stroke: #38bdf8; filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5)); }
-    </style>
+    ]]></style>
   </defs>
 
-  <!-- MAIN CANVAS BACKGROUND & RADIAL GLOWS -->
   <rect width="1180" height="610" rx="20" fill="#030712"/>
   <rect width="1180" height="610" rx="20" fill="url(#bgGlow1)"/>
   <rect width="1180" height="610" rx="20" fill="url(#bgGlow2)"/>
   <rect width="1180" height="610" rx="20" fill="url(#bgGlow3)"/>
 
-  <!-- Outer Shimmer Border -->
   <rect x="2" y="2" width="1176" height="606" rx="19" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" filter="url(#shadow)"/>
 
-  <!-- Grid Background Pattern -->
   <g opacity="0.04">
     <path d="M0 50 H1180 M0 100 H1180 M0 150 H1180 M0 200 H1180 M0 250 H1180 M0 300 H1180 M0 350 H1180 M0 400 H1180 M0 450 H1180 M0 500 H1180 M0 550 H1180" stroke="#38bdf8" stroke-width="1"/>
     <path d="M50 0 V610 M100 0 V610 M150 0 V610 M200 0 V610 M250 0 V610 M300 0 V610 M350 0 V610 M400 0 V610 M450 0 V610 M500 0 V610 M550 0 V610 M600 0 V610 M650 0 V610 M700 0 V610 M750 0 V610 M800 0 V610 M850 0 V610 M900 0 V610 M950 0 V610 M1000 0 V610 M1050 0 V610 M1100 0 V610 M1150 0 V610" stroke="#38bdf8" stroke-width="1"/>
   </g>
 
-  <!-- Floating Background Particles -->
   <circle cx="150" cy="120" r="2" fill="#38bdf8" class="particle-1"/>
   <circle cx="1050" cy="180" r="2.5" fill="#c084fc" class="particle-2"/>
   <circle cx="600" cy="520" r="2" fill="#34d399" class="particle-3"/>
 
-  <!-- LEFT SIDE: ASCII TERMINAL -->
+  <!-- LEFT SIDE -->
   <g id="left-panel" transform="translate(30, 30)">
-    <!-- Window Frame -->
     <rect width="440" height="550" rx="14" fill="#0f172a" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
-    
-    <!-- Titlebar -->
     <path d="M0 14 A14 14 0 0 1 14 0 H426 A14 14 0 0 1 440 0 V46 H0 Z" fill="#090d16" stroke="#1e293b" stroke-width="1.2"/>
     <circle cx="24" cy="23" r="5.5" fill="#ff5f56"/>
     <circle cx="41" cy="23" r="5.5" fill="#ffbd2e"/>
     <circle cx="58" cy="23" r="5.5" fill="#27c93f"/>
     <text x="220" y="27" text-anchor="middle" fill="#94a3b8" class="font-mono" font-size="12" font-weight="500">recep@dev: ~/portrait</text>
 
-    <!-- Terminal Background -->
     <rect x="2" y="47" width="436" height="501" fill="#060911" rx="0"/>
     <rect x="2" y="47" width="436" height="501" fill="url(#scanlines)" rx="0"/>
 
-    <!-- Floating Group (ONLY ASCII Content & Laser Beam) -->
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="6s" repeatCount="indefinite"/>
 
-      <!-- CLEAN BACKGROUND-FREE ASCII FACE PORTRAIT -->
       <g class="font-mono" font-size="10.5px" letter-spacing="1px" fill="url(#asciiGrad)" text-anchor="middle">
         <text x="220" y="82">                                      </text>
         <text x="220" y="96">                                      </text>
@@ -231,24 +201,21 @@
         <text x="220" y="488">    %####    % +++++*###       %      </text>
       </g>
 
-      <!-- Laser Scanline Sweep Beam -->
       <rect x="10" y="70" width="420" height="4" fill="url(#laserGrad)" filter="url(#glow)">
         <animate attributeName="y" values="70; 495; 70" dur="4s" repeatCount="indefinite"/>
       </rect>
     </g>
 
-    <!-- FIXED STATIONARY STATUS BAR (Does not float up/down) -->
     <g transform="translate(0, 0)">
       <line x1="15" y1="514" x2="425" y2="514" stroke="#1e293b" stroke-width="1"/>
       <circle cx="32" cy="532" r="4" fill="#10b981" class="status-dot-fixed"/>
       <text x="44" y="536" fill="#38bdf8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1px">STATUS: ACTIVE</text>
-      <text x="424" y="536" text-anchor="end" fill="#64748b" class="font-mono" font-size="10.5">[HOLO-PORTRAIT V3.0]</text>
+      <text x="424" y="536" text-anchor="end" fill="#94a3b8" class="font-mono" font-size="10.5">[HOLO-PORTRAIT V3.0]</text>
     </g>
   </g>
 
-  <!-- RIGHT SIDE: TERMINAL & DYNAMIC BIO -->
+  <!-- RIGHT SIDE -->
   <g id="right-panel" transform="translate(490, 30)">
-    <!-- Window Frame -->
     <rect width="660" height="550" rx="14" fill="#0f172a" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.2"/>
     <path d="M0 14 A14 14 0 0 1 14 0 H646 A14 14 0 0 1 660 0 V46 H0 Z" fill="#090d16" stroke="#1e293b" stroke-width="1.2"/>
     <circle cx="24" cy="23" r="5.5" fill="#ff5f56"/>
@@ -256,26 +223,21 @@
     <circle cx="58" cy="23" r="5.5" fill="#27c93f"/>
     <text x="330" y="27" text-anchor="middle" fill="#94a3b8" class="font-mono" font-size="12" font-weight="500">recep ~ zsh - 120x34</text>
 
-    <!-- Terminal Interior Background -->
     <rect x="2" y="47" width="656" height="501" fill="#060911" rx="0"/>
 
-    <!-- Command Prompt 1 ($ whoami) -->
     <text x="35" y="90" fill="#38bdf8" class="font-mono" font-size="16" font-weight="700">$</text>
     <text x="54" y="90" fill="#f8fafc" class="font-mono" font-size="16" font-weight="600">whoami</text>
 
-    <!-- Greeting: Hi 👋 I'm Recep Efe Bıçakçı -->
     <text x="35" y="135" class="font-mono">
-      <tspan fill="#ffffff" font-size="26" font-weight="800">Hi </tspan>
+      <tspan fill="#f8fafc" font-size="26" font-weight="800">Hi </tspan>
       <tspan font-size="26">👋 </tspan>
-      <tspan fill="#ffffff" font-size="26" font-weight="800">I'm </tspan>
+      <tspan fill="#f8fafc" font-size="26" font-weight="800">I'm </tspan>
       <tspan fill="url(#nameGrad)" font-size="26" font-weight="800">Recep Efe Bıçakçı</tspan>
     </text>
 
-    <!-- DYNAMIC TYPING PROMPT WITH CURSOR ATTACHED TO TEXT TIP -->
     <g transform="translate(0, 178)">
       <text x="35" y="0" fill="#38bdf8" class="font-mono" font-size="16" font-weight="700">&gt;</text>
       
-      <!-- Each typed phrase carries its cursor at its right tip; clip-path moves cursor with text! -->
       <g class="font-mono" font-size="16" font-weight="600" fill="#22d3ee">
         <text x="60" y="0" class="typed-1">Computer Engineering Student <tspan fill="#22d3ee" class="blinking-cursor">▋</tspan></text>
         <text x="60" y="0" class="typed-2">C++ &amp; System Developer <tspan fill="#22d3ee" class="blinking-cursor">▋</tspan></text>
@@ -284,12 +246,9 @@
       </g>
     </g>
 
-    <!-- Dotted Divider Line -->
     <line x1="35" y1="202" x2="625" y2="202" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
 
-    <!-- Metadata Information List -->
     <g class="font-mono" font-size="14px" transform="translate(0, 226)">
-      <!-- Location -->
       <g transform="translate(0, 0)">
         <text x="35" y="0" fill="#38bdf8" font-weight="600">~/location</text>
         <text x="160" y="0" fill="#475569" font-weight="600">→</text>
@@ -297,7 +256,6 @@
         <text x="330" y="0" font-size="13">🇹🇷</text>
       </g>
 
-      <!-- Education -->
       <g transform="translate(0, 28)">
         <text x="35" y="0" fill="#38bdf8" font-weight="600">~/education</text>
         <text x="160" y="0" fill="#475569" font-weight="600">→</text>
@@ -305,7 +263,6 @@
         <text x="440" y="0" font-size="13">🎓</text>
       </g>
 
-      <!-- Focus -->
       <g transform="translate(0, 56)">
         <text x="35" y="0" fill="#38bdf8" font-weight="600">~/focus</text>
         <text x="160" y="0" fill="#475569" font-weight="600">→</text>
@@ -313,14 +270,12 @@
         <text x="480" y="0" font-size="13">⚡</text>
       </g>
 
-      <!-- GitHub -->
       <g transform="translate(0, 84)">
         <text x="35" y="0" fill="#38bdf8" font-weight="600">~/github</text>
         <text x="160" y="0" fill="#475569" font-weight="600">→</text>
         <text x="190" y="0" fill="#38bdf8" font-weight="600">github.com/recefeb</text>
       </g>
 
-      <!-- Email -->
       <g transform="translate(0, 112)">
         <text x="35" y="0" fill="#38bdf8" font-weight="600">~/email</text>
         <text x="160" y="0" fill="#475569" font-weight="600">→</text>
@@ -328,12 +283,10 @@
       </g>
     </g>
 
-    <!-- Section Header: SKILLS & TECHNOLOGIES -->
     <g transform="translate(0, 375)">
-      <text x="35" y="0" fill="#64748b" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="1.5px">SKILLS &amp; TECHNOLOGIES</text>
+      <text x="35" y="0" fill="#94a3b8" class="font-mono" font-size="11.5" font-weight="700" letter-spacing="1.5px">SKILLS &amp; TECHNOLOGIES</text>
     </g>
 
-    <!-- Skills Capsule Pills -->
     <g class="font-mono" font-size="12px" transform="translate(35, 390)">
       <g class="pill" transform="translate(0, 0)">
         <rect width="64" height="26" rx="13" fill="url(#activePillGrad)" stroke="#38bdf8" stroke-width="1.2"/>
@@ -381,11 +334,10 @@
       </g>
     </g>
 
-    <!-- Bottom Social Bar -->
     <g transform="translate(35, 498)">
       <line x1="0" y1="0" x2="590" y2="0" stroke="#1e293b" stroke-width="1"/>
       <g class="font-mono" font-size="12px" transform="translate(0, 24)">
-        <text x="0" y="0" fill="#64748b">$ connect --with</text>
+        <text x="0" y="0" fill="#94a3b8">$ connect --with</text>
         <text x="140" y="0" fill="#38bdf8" font-weight="600">GitHub</text>
         <text x="200" y="0" fill="#475569">•</text>
         <text x="220" y="0" fill="#38bdf8" font-weight="600">Email</text>
